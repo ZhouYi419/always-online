@@ -20,9 +20,9 @@ public class AuthController {
     private final AuthService authService;
 
     @PostMapping("/register")
-    public ApiResponse<?> register(@Valid @RequestBody RegisterRequest request) {
+    public ApiResponse<String> register(@Valid @RequestBody RegisterRequest request) {
         authService.register(request);
-        return ApiResponse.success();
+        return ApiResponse.success("ok");
     }
 
     @PostMapping("/login")

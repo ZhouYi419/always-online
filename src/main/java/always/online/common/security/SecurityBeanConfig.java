@@ -1,4 +1,4 @@
-package always.online.common.config;
+package always.online.common.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
